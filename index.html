@@ -13,15 +13,18 @@
                 <div class="nav-left">
                     <img src="assets/DesktopLogo-efce2abc.svg" alt="">
                 </div>
-                <ul class="nav-right">
-                    <li><a id="gline"></a>Home</li>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>FAQs</li>
-                    <li><a href="#"></a>Contact Us</li>
-                    <span>
-                        <a href="">Register/Login</a>
-                    </span>
-                </ul>
+                <div class="nav-right">
+                  <ul class="navlinks">
+                    <li><a class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                  <a class="action-link" href="">Register/Login</a>
+                  <button class="hamburger">
+                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" class="text-2xl lg:hidden" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path></svg>
+                  </button>
+                </div>
             </nav>
         </header>
             
@@ -51,7 +54,7 @@
                     <div>
                         <img src="assets/eazy.png" alt="">
                     </div>
-                    <div>
+                    <div class="flex-text">
                         <h1>Easy to use</h1>
                         <p>4Gee Hub offers a beginner friendly interface.</p>
                     </div>
@@ -60,7 +63,7 @@
                     <div>
                         <img src="assets/bezt.png" alt="">
                     </div>
-                    <div>
+                    <div class="flex-text">
                         <h1>Best Rates</h1>
                         <p>Our sell rates are the best and are updated regularly.</p>
                     </div>
@@ -69,7 +72,7 @@
                     <div>
                         <img src="assets/quick 1-b30b94e2.png" alt="">
                     </div>
-                    <div>
+                    <div class="flex-text">
                         <h1>Quick Payments</h1>
                         <p>Get paid in Naira instantly after selling your gift cards. We also offer BTC  $ USDT payments </p>
                     </div>
@@ -84,21 +87,15 @@
             <div class="about-container">
 
                 <!-- LEFT IMAGE -->
-                <div class="about-image"></div>
-                <img src="assets/about-09ee9106.png" alt="">
-
+                <div class="about-image">
+                  <img src="assets/about-09ee9106.png" alt="">
+                </div>
                 <!-- RIGHT TEXT -->
                 <div class="about-text">
                     <p>4G Hub was established in May 2022.</p>
-                    <div>
-
                     
-                    </div>
-
-
                     <p>At 4Gee Hub we aim to create a reliable and trustworthy platform where people can have 
                         a seamless and fast trading experience with the best possible exchange rates.</p>
-
                     <p>
                         <span class="highlight2">Fast trading, simplicity</span> and 
                         <span class="highlight2">reliability</span>is what we stand for.
@@ -125,12 +122,21 @@
             <p>We have over 50+ cards and offer great rates on all the cards.</p>
 
             <div class="card-logos">
+              <div class="marquee-track">
                 <img src="assets/variety 1.svg" alt="">
                 <img src="assets/variety 2.svg" alt="">
                 <img src="assets/variety 3.svg" alt="">
                 <img src="assets/variety 4.svg" alt="">
                 <img src="assets/variety 5.svg" alt="">
                 <img src="assets/variety 6.svg" alt="">
+                <!-- duplicate -->
+                <img src="assets/variety 1.svg" alt="">
+                <img src="assets/variety 2.svg" alt="">
+                <img src="assets/variety 3.svg" alt="">
+                <img src="assets/variety 4.svg" alt="">
+                <img src="assets/variety 5.svg" alt="">
+                <img src="assets/variety 6.svg" alt="">
+              </div>
             </div>
         </section>
     <!-- how to get started -->
@@ -188,7 +194,7 @@
 
     <!-- LEFT -->
     <div class="faq-item">
-      <div class="faq-icon">?</div>
+      <div class="faq-icon"><img src="data:image/png;base64,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" class="lg:w-8 lg:h-8 w-6 h-6 mr-4" alt="question mark"></div>
       <div>
         <h3>Is 4Gee hub Safe?</h3>
         <p>4Gee Hub incorporates blockchain technology to secure your assets and account.</p>
@@ -196,7 +202,7 @@
     </div>
 
     <div class="faq-item">
-      <div class="faq-icon">?</div>
+      <div class="faq-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAb7SURBVHgBtVhrbFRVEJ45e3cBC1gehZZuAQ0YXyAYAsir3VICAQPGIP4EXxVNC6XdpZoIVBQhtFsKtcYSBROjRozhEUG0ttsCIQQ1CD8wETBou93SIq2UR9u99x7n7H2wLRu5d7d8SXvec747e87MnEGIA4/ve8HVOXz8DM5UDyCbCghPIecDVQ4pNMyQwVXg0Er1qxyhjim8oTG77DggcrAJtDM540TeGOgZ5OXIX6JmMthDkNYdVriytcVTcdnqIksEUwJvprpYUgmqPDf2Gt7NAS/TQCgilMNQFWAyIkixJfJPFBXeD833/wWJEhwbKFqrApZAL41hD/1WDVT5EhTpZDBn6x+x1o4OeJ90IJ/k4GwFB3UZrTP344itdCzea/KUfQjxEBz9gzdJckIpiXzjTi/voCU7b4Bc0eGp6AAbSKstGidJ+BpXcTXJGXFHJFY2ZZeuATsEkwMFyYO59BWNLorq3n8jWX65Y6o9Yn2RGigY7+COEkRcaXIEXqt2di4NLd19C6wQdAe8J6l4Rl/MObD8Zk9pFfQj0gOFBcAdW+hiP6BTORru4cuvLCy7GT2P3b3Q97FBjrh1gMSn9jc5gaCnvAKBZ0f20DZbJA2A0r7zemnQfcybBwpUatzwFo3ODnpKf4P7CPexddNBYaeMC4RcfaUxu3yPMW5qUJwNIrfRaNOt89klN/zIpqFZgRLJzpqmeTtOkyLWmvsi8wuzZrRNDabXFu1Fhqs0clAd9JSttrIBndcsWrCBVk0mJYwUX0Ym5ByC+osMyharRjm93vst2c/ndZbmzY5oUGjPIEcbXFNA3mZFKJHbREWAPjM7Qk77ZEZnawpVXnWCM0BneooVWRzVAs2MCVY8L+PE+jEmQQeT3jImkkqrrXx1Wq3vaSpKem1CJ7dPezxtsH9YTfGD95LXnFneCCru1BciD0OuRrCkhKEKzxoyZX67GixAQnVmFJNLpLdHgh4/6xkUTqWf+INokkkO5VErMplLEgR7tJYaOZcsdda/c6lM1zrxYGh+1T39o4DM4TAp7DxRuCijnNOUWXpB9LfO3HklmLn9HYjWJirDrMj8e+62dgooGvRmcsZPvrmS5HB4jAkq8K/BInRH/0SssdT6deOEjs0OxdEMFoEyOwwOvkDUiWw2o3gt0xjkjJ2FBJF6LD9FAud3UV0Hm3LKzlkW4IQjZp3hREauJkVvyqHM7b9DAkhrKHjMqQw8TZ+qaZZDswxygR0Z+lHpEnWyBrMYmYcUTRYkpD0tCJDqxaXQ5TWFERbaCU4N0CVuiZQIAyU6yyMEVzownZAAJO7YTMUobQN+WXVB1pXZfksXri/I3anC8xGnkUyYHKMfEgCZlufMDRRcFoqTnCYAlYhMCqPI6kOb3p0KcSLtUO4DJGeIJhyu2boUMUDEXFoF/mEUtXTrjYcgToS62rtBRD8CKm+BRIG6XUZoFbf4rN5wuRt8EyEerPhGUZiIvrFAccLrkADcNesm0a+hRUQqXhSVM/S3TOvg8+j/BYgDoazS41QchwSBTuc0zlWtztRfmYJKnTkI+CLEiYxanzcj4PsxvbZwFSQAIrfMbCBrwAlH8gd0DXLRucFkOoc9N1AebffFJkghY3ujujz0nKwHmxC2VALpT9AsSpBkuNnFxZV0SVCLYOgcJnGpEGwCkc3p1aFCXGfZiVK+Tk5kSfaJMhIPKkN4GUSMf+RlkJ98psBWWoMyDtXGemGkZSbXgE0I7dHRW6XL4GGu7DIJhqb5r1JhvNySB3dIe2zIhsYc/8/kcx8mU7P8JihT43Fv5CY3k+6GawThU0OG6T1SAr7UASDiO4jEbiqoec2e8n5/bsYCXS4vaS3y5KRXeKs6AKYbnsh81bV5Sls4g7eNNgNW6a7zzoD7jPT69R7yHO9GdW2IdpO9Hu7BzLJq+gRDa8Jb14xpKJ4F9wnuWnoTq+pB0LMLFL2UB7P9u6Pn3JVZCIexmIqjenMIU5Qad8C3FvqbXL0vn0KBU3QpdR+OB4JZZUV958WMYMZT8iiMzn2UHltgdnL4nN4eG+O5ANFIq1kz1uF07QDjDayx+F65fn255eSRAXpM+ykYM+0ifW07+cfPwhjeZZeoMF1J7VKhMGPQK9fIq8I9WNw3aWSJYIRkXVEuuZzNFH6PjuqmSweHyC0dUDiebsnxn4+11t2wZiKXXUtolyWUbiM/z11Rw+3Uzm/y+L/4v/0tBamRcF51bKLsw8pYa8huyfQvSMnzbtKwxCPZBRjTh5AxW+Tztvbg7co2z0f3DM1sRdERouSO6GxSUIHpYAtadla+3V3VsriyzeqquMP8sYHiOZQcms9UysMwnECSRpFqRpBtErGS8ExdpNUT1H+JIvi6xqwdcYVi/wHb2cdZu/4ZYwAAAABJRU5ErkJggg==" class="lg:w-8 lg:h-8 w-6 h-6 mr-4" alt="question mark"></div>
       <div>
         <h3>How do I get paid?</h3>
         <p>After the trade has been accepted, your naira wallet will be credited and you can exchange to BTC or USDT at the naira equivalent.</p>
@@ -205,7 +211,7 @@
 
     <!-- RIGHT -->
     <div class="faq-item">
-      <div class="faq-icon">?</div>
+      <div class="faq-icon"><img src="data:image/png;base64,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" class="lg:w-8 lg:h-8 w-6 h-6 mr-4" alt="question mark"></div>
       <div>
         <h3>Can I buy gift cards on 4Gee hub?</h3>
         <p>No, we do not offer the services of buying gift cards on the platform yet.</p>
@@ -213,7 +219,7 @@
     </div>
 
     <div class="faq-item">
-      <div class="faq-icon">?</div>
+      <div class="faq-icon"><img src="data:image/png;base64,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" class="lg:w-8 lg:h-8 w-6 h-6 mr-4" alt="question mark"></div>
       <div>
         <h3>How long before my transaction is accepted?</h3>
         <p>Transactions are accepted in minutes and payment are processed almost immediately.</p>
@@ -238,47 +244,56 @@
   </div>
 </section>
 
-<!-- footer -->
-<footer class="footer">
-  <div class="footer-container">
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- LEFT -->
+        <div class="footer-left">
+          <img src="/assets/mobileIconFooter-cfdc4138.png" alt="logo">
+          <p>
+            Our main focus is to create a reliable and trustworthy platform where people can sell their gift cards with the best exchange rate seamlessly.
+          </p>
+        </div>
 
-    <!-- LEFT -->
-    <div class="footer-col">
-      <h2 class="logo">4GEE HUB</h2>
-      <p>
-        Our main focus is to create a reliable and trustworthy platform where people can sell their gift cards with the best exchange rate seamlessly.
-      </p>
-    </div>
 
-    <!-- QUICK LINKS -->
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul>
-        <li>Features</li>
-        <li>About Us</li>
-        <li>FAQs</li>
-      </ul>
-    </div>
+        <div class="circle">1</div>
 
-    <!-- INFO -->
-    <div class="footer-col">
-      <h3>Info</h3>
-      <ul>
-        <li>Privacy Policy</li>
-        <li>Terms and conditions</li>
-      </ul>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="footer-col">
-      <h3>Contact Us</h3>
-      <ul>
-        <li>Mail</li>
-        <li>Instagram</li>
-      </ul>
-    </div>
-
-  </div>
-</footer>
-    </body>
+        <!-- QUICK LINKS -->
+        <div class="quick-links">
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>Features</li>
+              <li>About Us</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+      
+          <!-- INFO -->
+          <div class="footer-col">
+            <h3>Info</h3>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Terms and conditions</li>
+            </ul>
+          </div>
+      
+          <!-- CONTACT -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <img src="/assets/email-7fc593ae.svg" class="Mail" alt="email">
+                <span>Mail</span>
+              </li>
+              <li>
+                <img src="/assets/instagram-e6d14352.svg" class="w-6 h-6 mr-6" alt="instagram">
+                <span>Instagram</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
