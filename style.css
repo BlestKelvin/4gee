@@ -576,15 +576,6 @@ ul {
   font-size: 18px;
 }
 
-.circle {
-  position: relative;
-}
-
-.circle::after {
-  position: absolute;
-  content: '';
-  border: 1px dotted black;
-}
 
 .quick-links {
   flex: 1;
