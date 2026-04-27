@@ -28,6 +28,7 @@
             </nav>
         </header>
         <aside>
+          <div class="overlay"></div>
           <div class="sidebar">
             <button class="close-btn" onclick="handleCloseSidebar()">X</button>
             <ul class="sidebar-links">
@@ -307,13 +308,16 @@
     </footer>
 
     <script>
+      const overlay = document.querySelector('.overlay');
       const sidebar = document.querySelector('.sidebar');
 
       function handleSidebar() {
+        overlay.classList.add('active');
         sidebar.classList.add('active');
       }
 
       function handleCloseSidebar() {
+        overlay.classList.remove('active');
         sidebar.classList.remove('active');
       }
     </script>
