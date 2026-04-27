@@ -21,12 +21,24 @@
                     <li><a href="#">Contact Us</a></li>
                   </ul>
                   <a class="action-link" href="">Register/Login</a>
-                  <button class="hamburger">
+                  <button class="hamburger" onclick="handleSidebar()">
                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" class="text-2xl lg:hidden" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path></svg>
                   </button>
                 </div>
             </nav>
         </header>
+        <aside>
+          <div class="sidebar">
+            <button class="close-btn" onclick="handleCloseSidebar()">X</button>
+            <ul class="sidebar-links">
+              <li><a href="" class="active">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+            <a href="" class="sidebar-auth">Register/login</a>
+          </div>
+        </aside>
             
         <!-- HERO SECTION -->
         <section class="hero">
@@ -293,5 +305,17 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const sidebar = document.querySelector('.sidebar');
+
+      function handleSidebar() {
+        sidebar.classList.add('active');
+      }
+
+      function handleCloseSidebar() {
+        sidebar.classList.remove('active');
+      }
+    </script>
   </body>
 </html>

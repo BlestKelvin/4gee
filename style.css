@@ -101,6 +101,77 @@ ul {
 
 }
 
+/* SIDEBAR */
+.sidebar {
+  background-color: black;
+  color: white;
+  padding: 120px 20px;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sidebar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.sidebar-links li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+}
+
+.sidebar-links li a:hover {
+  opacity: 0.8;
+}
+
+.sidebar-links .active {
+  border-bottom: 2px solid green;
+  padding-bottom: 4px;
+}
+
+.sidebar-auth {
+  background-color: #22c55e;
+  color: white;
+  text-align: center;
+  padding: 12px 22px;
+  border-radius: 8px;
+  display: block;
+  width: max-content;
+  margin: auto;
+  margin-top: 55px;
+}
+
+
 /* HERO SECTION */
 .hero {
     text-align: center;
